@@ -66,5 +66,4 @@ resource "azurerm_virtual_machine_extension" "CustomScript" {
   "commandToExecute": "bash install-app.sh"
 }
 SETTINGS
-
 }
