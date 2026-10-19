@@ -1,10 +1,10 @@
 terraform {
 
   backend "azurerm" {
-    storage_account_name = "taskmateacademy"
+    storage_account_name = "Todoapp"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
-    resource_group_name  = "mate-azure-task-12"
+    resource_group_name  = "Todoapp-project"
   }
 
   required_providers {
