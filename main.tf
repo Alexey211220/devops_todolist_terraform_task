@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
+
 module "network" {
   source = "./modules/network"
 
@@ -21,6 +22,7 @@ module "network" {
   security_rules              = var.security_rules
 }
 
+
 module "compute" {
   source = "./modules/compute"
 
@@ -35,6 +37,7 @@ module "compute" {
   public_ip_id      = module.network.public_ip_id
   public_ip_address = module.network.public_ip_address
 }
+
 
 module "storage" {
   source = "./modules/storage"
